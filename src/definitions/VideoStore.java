@@ -57,4 +57,14 @@ public class VideoStore {
         // TODO add the video to the inventory (add it to the array).
         System.out.println(name + "was added to the inventory.");
     }
+
+    /**
+     * This method helps us to rent a video.
+     *
+     * @param name the name of the video you want to rent.
+     */
+    public void doCheckOut(String name) {
+        System.out.println("Thank you for renting " + name + ".");
+    }
+
 }
