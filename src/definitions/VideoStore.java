@@ -14,7 +14,7 @@ public class VideoStore {
     public VideoStore() {
         this.store = new Video[10];
         for (int i = 0; i < store.length; i++) {
-            store[i] = new Video();
+            store[i] = new Video("video" + (i + 1));
         }
     }
 
