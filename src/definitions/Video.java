@@ -31,6 +31,18 @@ public class Video {
         this.checkOut = false;
     }
 
+    public void doCheckOut() {
+        if (!checkOut) {// if video is not checked out(available to rent)
+            setCheckOut(false);
+        }
+    }
+
+    public void doReturn() {
+        if (checkOut) {
+            setCheckOut(false);
+        }
+    }
+
     public String getVideoName() {
         return videoName;
     }
