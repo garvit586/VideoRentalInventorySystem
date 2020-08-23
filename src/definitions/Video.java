@@ -11,18 +11,22 @@ public class Video {
     private boolean checkOut;
     private int rating;
 
-    // 1. Non- parameterized constructor
     public Video() {
         videoName = "Sooryavansham";
         rating = 5;
         checkOut = true;
     }
 
-    // 2. parameterized constructor
     public Video(String videoName, int rating, boolean checkOut) {
         this.videoName = videoName;
         this.rating = rating;
         this.checkOut = checkOut;
+    }
+
+    public Video(String videoName) {
+        this.videoName = videoName;
+        this.rating = 4;
+        this.checkOut = false;
     }
 
     public String getVideoName() {
@@ -47,5 +51,9 @@ public class Video {
 
     public void setCheckOut(boolean checkOut) {
         this.checkOut = checkOut;
+    }
+
+    public String toString() {
+        return String.format("Video Name: %s, Video Rating:%d, Is Video Available: %b", getVideoName(), getRating(), isCheckOut());
     }
 }
