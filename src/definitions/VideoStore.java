@@ -47,4 +47,14 @@ public class VideoStore {
     public String toString() {
         return Arrays.toString(store);
     }
+
+    /**
+     * this method adds a Video to the videostore Inventory.
+     *
+     * @param name the name of the video to be added.
+     */
+    public void addVideo(String name) {
+        // TODO add the video to the inventory (add it to the array).
+        System.out.println(name + "was added to the inventory.");
+    }
 }
