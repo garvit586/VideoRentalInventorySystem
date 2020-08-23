@@ -11,12 +11,8 @@ import definitions.Video;
 public class Main {
     public static void main(String[] args) {
         Video video = new Video("Robot");
-        /*video.setRating(5);
-        video.setCheckOut(true);
-        video.setVideoName("Baahubali: The Beginning");
-        System.out.println(video.getVideoName());
-        System.out.println(video.getRating());
-        System.out.println(video.isCheckOut());*/
-        System.out.println(video);
+        Video video2 = new Video("Robot");
+
+
     }
 }
